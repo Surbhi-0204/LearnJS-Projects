@@ -56,3 +56,15 @@ label{
     background-color: #02355d;
     cursor: pointer;
 }
+#res{
+    /* background-color: ; */
+    margin-top: 15px;
+    color: #05416f;
+
+}
+#res p{
+    font-size: 20px;
+    color: #065b9c;
+    margin-top: 10px;
+    margin-left: 20px;
+}
