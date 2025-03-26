@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #fbe3e8;
+    text-align: center;
+}
+header {
+    background: #f8f3f4;
+    padding: 15px;
+    color: #39908d;
+}
+button{
+    background-color: #56beb5;
+    color: aliceblue;
+    width: 80px;
+    height: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+}
+button:hover{
+    width: 80px;
+    height: 25px;
+    background-color: #3b857e;
+}
+#bookContainer {
+    background-color: white;
+    margin: 50px 50px;
+    /* display: flex; */
+    justify-content: center;
+    padding: 20px;
+}
