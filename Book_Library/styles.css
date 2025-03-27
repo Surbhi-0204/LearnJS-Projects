@@ -6,12 +6,13 @@
 body{
     font-family: Arial, sans-serif;
     background-color: #fbe3e8;
-    text-align: center;
+    
 }
 header {
     background: #f8f3f4;
     padding: 15px;
     color: #39908d;
+    text-align: center;
 }
 button{
     background-color: #56beb5;
@@ -30,7 +31,36 @@ button:hover{
 #bookContainer {
     background-color: white;
     margin: 50px 50px;
-    /* display: flex; */
     justify-content: center;
     padding: 20px;
+}
+ul li{
+    list-style-type: none;
+}
+.bookList{
+    text-decoration: none;
+    list-style-type: none;
+    list-style-position: inside;
+}
+.bookGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto); 
+    gap: 10px;
+    padding: 10px;
+}
+.bookList {
+    list-style-type: none;
+    padding: 0;
+    display: contents;
+}
+
+.bookList li {
+    background-color: #f8f3f4;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
