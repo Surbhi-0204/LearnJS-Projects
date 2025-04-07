@@ -8,8 +8,10 @@ let taskcount =0;
 let completeTaskCount = 0 
 
 addBtn.addEventListener("click" , () => {
+    const texttask= document.createElement('span');
     const val = taskInput.value;
-    val.classList = 'task-text'
+    texttask.textContent = val;
+    texttask.className = 'task-text'
     if (val === "") return;
 
     taskcount = taskcount+1;
@@ -18,14 +20,12 @@ addBtn.addEventListener("click" , () => {
 
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
-    checkbox.classList ='complete-checkbox';
+    checkbox.className ='complete-checkbox';
 
     checkbox.addEventListener('click' , () =>{
         if (checkbox.checked){
         completeTaskCount = completeTaskCount+1;
-        li.classList.add('completed');
-        li.classList.add('task-text');
-    
+        li.classList.toggle('completed');
         }
         else {
         completeTaskCount = completeTaskCount -1 ;
@@ -59,6 +59,7 @@ addBtn.addEventListener("click" , () => {
     li.appendChild(deleteBtn);
     taskList.appendChild(li);
     emptylist();
+    taskInput.value=null
 })
 
 function emptylist() {
