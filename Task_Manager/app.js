@@ -29,13 +29,13 @@ addBtn.addEventListener("click" , () => {
         }
         else {
         completeTaskCount = completeTaskCount -1 ;
-    
+            li.classList.toggle('completed');
         }
         completedTasks.textContent =`Completed: ${completeTaskCount}`
     })
    
-    const task = document.createTextNode(`   ${val}   `);
-    task.classList ='task-text'
+    // const task = document.createTextNode(`   ${val}   `);
+    // task.classList ='task-text'
     
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = 'Delete';
@@ -55,7 +55,7 @@ addBtn.addEventListener("click" , () => {
     totalTasks.textContent =`Total tasks: ${taskcount}`;
 
     li.appendChild(checkbox);
-    li.appendChild(task);
+    li.appendChild(texttask);
     li.appendChild(deleteBtn);
     taskList.appendChild(li);
     emptylist();
