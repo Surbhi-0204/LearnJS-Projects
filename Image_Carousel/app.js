@@ -29,7 +29,7 @@ const images = [
    const timerDisplay = document.getElementById("timerDisplay");
 
    let n = 0;
-   let playauto = true;
+   let playauto = false;
    let countdown = 5;
    const indicators = [];
 
